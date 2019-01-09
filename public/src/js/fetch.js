@@ -96,9 +96,9 @@
   }
 
   Headers.prototype.append = function(name, value) {
-    name = normalizeName(name)
-    value = normalizeValue(value)
-    var oldValue = this.map[name]
+    name = normalizeName(name);
+    value = normalizeValue(value);
+    var oldValue = this.map[name];
     this.map[name] = oldValue ? oldValue+','+value : value
   };
 
